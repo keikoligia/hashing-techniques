@@ -92,14 +92,6 @@ class SondagemQuadratica
         return false;
     }
 
-    public bool Remover(string chaveARemover)
-    {
-        int onde = 0;
-        if (!Existe(chaveARemover, out onde))
-            return false;
-        dados[onde] = null;
-        return true;
-    }
     public void LerDeArquivo(string nomeArquivo)
     {
         if (!File.Exists(nomeArquivo))
